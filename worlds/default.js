@@ -61,5 +61,25 @@ export function init(Constants) {
                 dataType: "jpg",
             }
         },
+
+        {
+            card: {
+                    translation: [-1.4332548477256493, 0.7774404169439078, 27.637767491502668],
+                    scale: [6.7180240526439, 6.7180240526439, 6.7180240526439],
+                    rotation: [0, 0.9983881722584435, 0, -0.05675436101697372],
+                    layers: ["pointer"],
+                    name: "/Infographic_3.png",
+                    cornerRadius: 0.02,
+                    fileName: "/Infographic_3.png",
+                    fullBright: true,
+                    modelType: "img",
+                    shadow: true,
+                    singleSided: true,
+                    textureLocation: "./assets/images/Infographic_3.png",
+                    textureType: "image",
+                    type: "2d",
+
+            }
+        },
     ];
 }
