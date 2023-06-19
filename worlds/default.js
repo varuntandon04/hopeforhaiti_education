@@ -21,7 +21,7 @@ export function init(Constants) {
 
     Constants.UserBehaviorDirectory = "behaviors/default";
     Constants.UserBehaviorModules = [
-        "csmLights.js"
+        "csmLights.js", "shoppingCart.js"
     ];
 
     Constants.DefaultCards = [
@@ -78,6 +78,8 @@ export function init(Constants) {
                     textureLocation: "./assets/images/Infographic_3.png",
                     textureType: "image",
                     type: "2d",
+                    behaviorModules: ["ShoppingCart"],
+                    price: "10.99",
 
             }
         },
