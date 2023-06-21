@@ -319,5 +319,90 @@ export function init(Constants) {
             
             }
         },
+
+        {
+            card: {
+
+                    translation: [12.168052831053805, 1.425045229613765, 16.90420923813561],
+                    scale: [3.655991549242714, 3.655991549242714, 3.655991549242714],
+                    rotation: [0, -1.0025612211358828, 0, -0.010263033419074488],
+                    layers: ["pointer"],
+                    behaviorModules: ["PDFView"],
+                    name: "/2021-Gratitude-Report-Digital-Version.pdf",
+                    color: 8947848,
+                    depth: 0.05,
+                    fileName: "/2021-Gratitude-Report-Digital-Version.pdf",
+                    frameColor: 16777215,
+                    fullBright: true,
+                    height: 1,
+                    modelType: "pdf",
+                    pdfLocation: "./assets/docs/2021-Gratitude-Report-Digital-Version.pdf",
+                    shadow: true,
+                    singleSided: true,
+                    type: "2d",
+                    width: 0.7727272727272728,
+
+            }
+        },
+
+        {
+            card: {
+                    translation: [-19.59679127600608, 0.9296175803882324, 5.868326835411894],
+                    scale: [2.7135918006230098, 2.7135918006230098, 2.7135918006230098],
+                    rotation: [0, 0.714229961116417, 0, 0.6999111105302167],
+                    layers: ["pointer"],
+                    name: "/Info 1.1.png",
+                    cornerRadius: 0.02,
+                    fileName: "/Info 1.1.png",
+                    fullBright: true,
+                    modelType: "img",
+                    shadow: true,
+                    singleSided: true,
+                    textureLocation: "./assets/images/Info 1.1.png",
+                    textureType: "image",
+                    type: "2d",
+
+            }
+        },
+
+        {
+            card: {
+                    translation: [-19.59679127600608, 0.9296175803882324, 2.010396610677438],
+                    scale: [2.7135918006230098, 2.7135918006230098, 2.7135918006230098],
+                    rotation: [0, 0.714229961116417, 0, 0.6999111105302167],
+                    layers: ["pointer"],
+                    name: "/Info 1.2.png",
+                    cornerRadius: 0.02,
+                    fileName: "/Info 1.2.png",
+                    fullBright: true,
+                    modelType: "img",
+                    shadow: true,
+                    singleSided: true,
+                    textureLocation: "./assets/images/Info 1.2.png",
+                    textureType: "image",
+                    type: "2d",
+
+            }
+        },
+
+        {
+            card: {
+                    translation: [-16.970763477501684, 0.9296175803882324, -1.5889550375338928],
+                    scale: [2.7135918006230098, 2.7135918006230098, 2.7135918006230098],
+                    rotation: [0, 0.006362086930907247, 0, 0.9999797617201478],
+                    layers: ["pointer"],
+                    name: "/Info 2.1.png",
+                    cornerRadius: 0.02,
+                    fileName: "/Info 2.1.png",
+                    fullBright: true,
+                    modelType: "img",
+                    shadow: true,
+                    singleSided: true,
+                    textureLocation: "./assets/images/Info 2.1.png",
+                    textureType: "image",
+                    type: "2d",
+
+            }
+        },
     ];
 }
