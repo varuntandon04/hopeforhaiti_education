@@ -7,9 +7,10 @@ body {
   background: none;
   overflow: hidden;
   user-select: none;
+  font-size: 12px;
 }
 * {
-  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -31,9 +32,7 @@ table td img,
 .form-group input[type="button"],
 .form-group input[type="submit"],
 .form-group button {
-  border: 2.5px solid white;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 255, 0.55);
-  border-radius: 0.4rem;
+  border-radius: 10px;
 }
 
 .container input[type="button"] {
@@ -68,17 +67,19 @@ table td img,
 
 .form-group {
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .form-group input[type="text"],
 .form-group input[type="number"],
+.form-group input[type="email"],
 .form-group select {
-  width: 95%;
-  padding: 6px 10px;
-  border: 1px solid rgba(0,0,0,0.25);
-  border-radius: 5px;
-  font-size: 14px;
-  background:rgba(255,255,255,0.3);
+  width: 100%;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.06);
   transition-duration: 0.12s;
 }
 
@@ -104,7 +105,7 @@ table {
 
 th,
 td {
-  padding: 8px;
+  padding: 11px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -186,7 +187,6 @@ input:checked + .slider:before {
   margin-left: 6px;
 }
 
-
 .row {
   display: flex;
   flex-direction: row;
@@ -205,26 +205,26 @@ input:checked + .slider:before {
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .form-group input[type="submit"],
 .form-group button {
   width: auto;
-  padding: 10px 20px;
+  padding: 3px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #4caf50;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .form-group input[type="submit"]:hover,
 .form-group button:hover {
   background-color: #45a049;
 }
-
 
 .row-payment input[type="radio"] {
   margin: 0;
@@ -323,13 +323,122 @@ input:checked + .slider:before {
     to {bottom: 0; opacity: 0;}
 } */
 
-
-
 .form-group input[type="button"]:disabled,
 .form-group button:disabled {
-  background-color: #ccc!important;
-  pointer-events: none!important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  pointer-events: none !important;
   border: unset;
   box-shadow: unset;
   border-radius: 0.4rem;
+}
+
+.dollar::before {
+  content: "$ ";
+}
+
+table#tblCards * {
+  border: none;
+}
+
+#btnClose {
+  border-radius: 10rem;
+  width: 47px;
+  height: 47px;
+  border: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.btnMini {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: small;
+}
+
+.feather-16 {
+  width: 16px;
+  height: 16px;
+}
+.feather-18 {
+  width: 18px;
+  height: 18px;
+}
+.feather-20 {
+  width: 20px;
+  height: 20px;
+}
+.feather-24 {
+  width: 24px;
+  height: 24px;
+}
+.feather-32 {
+  width: 32px;
+  height: 32px;
+}
+.title {
+  font-weight: 600;
+  text-align: center;
+  line-height: 16.34px;
+}
+
+.paymentMethod {
+  border-radius: 15px;
+  border: 1px solid #f0f0f0;
+  transition-duration: 0.12s;
+  width: 64px;
+  height: 50px;
+  margin: 0 7px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paymentMethod.active {
+  border: 1px solid #6e6e6e;
+}
+
+.light {
+  color: rgb(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+.dark {
+  color: rgb(0, 0, 0, 0.76);
+  font-weight: 700;
+}
+
+.light-btn {
+  border-radius: 10px;
+  padding: 2px 13px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.tmodal-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(0.4rem);
+  z-index: 1;
+}
+
+.tmodal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  transition-duration: 0.12s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #d2d2d2;
+  z-index: 99;
 }
